@@ -1,0 +1,124 @@
+.btn {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.btn:focus {
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.2);
+}
+
+.btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Variants */
+.btn--primary {
+  background-color: #007bff;
+  color: white;
+}
+
+.btn--primary:hover:not(:disabled) {
+  background-color: #0056b3;
+}
+
+.btn--secondary {
+  background-color: #6c757d;
+  color: white;
+}
+
+.btn--secondary:hover:not(:disabled) {
+  background-color: #545b62;
+}
+
+.btn--success {
+  background-color: #28a745;
+  color: white;
+}
+
+.btn--success:hover:not(:disabled) {
+  background-color: #218838;
+}
+
+.btn--danger {
+  background-color: #dc3545;
+  color: white;
+}
+
+.btn--danger:hover:not(:disabled) {
+  background-color: #c82333;
+}
+
+.btn--ghost {
+  background-color: transparent;
+  color: #007bff;
+  border: 1px solid #007bff;
+}
+
+.btn--ghost:hover:not(:disabled) {
+  background-color: #007bff;
+  color: white;
+}
+
+/* Sizes */
+.btn--small {
+  padding: 8px 16px;
+  font-size: 14px;
+  min-height: 36px;
+}
+
+.btn--medium {
+  padding: 12px 24px;
+  font-size: 16px;
+  min-height: 44px;
+}
+
+.btn--large {
+  padding: 16px 32px;
+  font-size: 18px;
+  min-height: 52px;
+}
+
+/* Modifiers */
+.btn--full-width {
+  width: 100%;
+}
+
+.btn--loading {
+  pointer-events: none;
+}
+
+.btn__spinner {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: 2px solid transparent;
+  border-top: 2px solid currentColor;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-right: 8px;
+}
+
+.btn__text--loading {
+  opacity: 0.7;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+} 

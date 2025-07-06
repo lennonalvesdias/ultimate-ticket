@@ -1,0 +1,33 @@
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+}
+
+.container--small {
+  max-width: 576px;
+}
+
+.container--medium {
+  max-width: 1200px;
+}
+
+.container--large {
+  max-width: 1400px;
+}
+
+.container--fluid {
+  max-width: 100%;
+}
+
+.container--padding {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@media (max-width: 768px) {
+  .container--padding {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+} 

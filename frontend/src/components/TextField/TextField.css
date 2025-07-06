@@ -1,0 +1,75 @@
+.textfield {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+}
+
+.textfield--full-width {
+  width: 100%;
+}
+
+.textfield__label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 500;
+  color: #333;
+  font-size: 14px;
+}
+
+.textfield__input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  box-sizing: border-box;
+  font-family: inherit;
+}
+
+.textfield__input:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+}
+
+.textfield__input--error {
+  border-color: #dc3545;
+}
+
+.textfield__input--error:focus {
+  border-color: #dc3545;
+  box-shadow: 0 0 0 3px rgba(220, 53, 69, 0.1);
+}
+
+.textfield--outlined .textfield__input {
+  background-color: white;
+}
+
+.textfield--filled .textfield__input {
+  background-color: #f8f9fa;
+  border: 1px solid transparent;
+}
+
+.textfield--filled .textfield__input:focus {
+  background-color: white;
+  border-color: #007bff;
+}
+
+.textfield__error-message {
+  color: #dc3545;
+  font-size: 12px;
+  margin-top: 4px;
+  display: block;
+}
+
+.textfield__helper-text {
+  color: #666;
+  font-size: 12px;
+  margin-top: 4px;
+  display: block;
+}
+
+.textfield--error .textfield__label {
+  color: #dc3545;
+} 
